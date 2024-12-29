@@ -4,4 +4,5 @@ yum upgrade
 # Add required dependencies for the jenkins package
 yum install fontconfig java-17-openjdk (Alternative command - dnf install java-17-amazon-corretto-devel)
 yum install jenkins
-systemctl daemon-reload
+systemctl enable jenkins.service 
+systemctl start jenkins.service
