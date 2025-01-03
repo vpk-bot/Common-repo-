@@ -6,3 +6,7 @@ yum install fontconfig java-17-openjdk (Alternative command - dnf install java-1
 yum install jenkins
 systemctl enable jenkins.service 
 systemctl start jenkins.service
+
+### 
+chmod -R 755 /var/www/html/
+chown -R jenkins:jenkins /var/www/html/
